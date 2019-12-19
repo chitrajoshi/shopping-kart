@@ -1,0 +1,122 @@
+.modal{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+
+
+  .modal-container{
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    font-size: 39px;
+
+    @media (min-width: 720px) {
+      margin: 50px;
+    }
+
+    .close-button{
+      font-size: 30px;
+      color: black;
+      text-align: right;
+      margin-bottom: 40px;
+    }
+
+    .details{
+      display: flex;
+      flex-wrap: wrap;
+
+      .mobile-item-img{
+        flex: 1;
+        height: auto;
+        width: auto;
+        display: block;
+
+        @media (min-width: 720px) {
+          display: none;
+        }
+      }
+
+      .item-details{
+        flex: 1;
+        padding: 40px 5px;
+        text-align: center;
+
+        @media (min-width: 720px) {
+          padding: 40px 20px;
+        }
+
+        .name{
+          font-size: 22px;
+          text-transform: uppercase;
+        }
+
+        .price{
+          font-size: 20px;
+          padding: 20px 0;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+
+          span{
+            font-size: 46px;
+            font-weight: 400;
+            padding-left: 10px;
+          }
+        }
+
+        .variation{
+          font-size: 20px;
+          margin-top: 20px;
+        }
+
+        .available-colors{
+          padding: 10px 60px;
+          .color-block{
+            display: inline-block;
+            cursor: pointer;
+            margin: 10px;
+            height: 20px;
+            width: 40px;
+          }
+        }
+
+        .available-size{
+          display: flex;
+          padding: 0 10px;
+          justify-content: center;
+        }
+
+        .edit-button{
+          background-color: blue;
+          color: white;
+          padding: 12px 20px;
+          font-size: 20px;
+          margin: 20px 0;
+          cursor: pointer;
+        }
+
+      }
+
+      .item-img{
+        display: none;
+        flex: 1;
+        min-width: 200px;
+        min-height: 300px;
+        width: auto;
+        height: auto;
+
+        @media (min-width: 720px) {
+          display: block;
+        }
+      }
+    }
+
+
+  }
+}
+
